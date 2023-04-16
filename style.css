@@ -2,12 +2,33 @@
 
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: #e0e4ce;
 }
 
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;  
+}
+
+/*animacion */
+.animacion {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.animacion .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.animacion .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 /* Estilos generales */
@@ -25,8 +46,8 @@ h1 {
 }
 
 .seccion-oscura {
-  color: white;
-  background-color: #1b1b32;
+  color: #e0e4ce;
+  background-color: #114d4d;
 }
 
 .seccion-clara {
@@ -88,13 +109,13 @@ h1 {
 /* Sobre mi */
 
 .sobre-mi {
-  height: 500px;
+  height: 800px;
   padding: 10px;
 }
 
 .sobre-mi .contenedor {
   max-width: 600px;
-  text-align: center;
+  text-align:justify
 }
 
 /* Experiencia */
@@ -103,27 +124,32 @@ h1 {
   padding: 40px 40px 60px 40px;
 }
 
+.experiencia .row {
+  display: flex;
+  justify-content: center;
+}
+
 .experiencia .columna {
   padding: 20px;
   border: 2px solid #8080804d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   transition: all 0.2s ease-in;
 }
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: #114d4d;
 }
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
+  color: #e0e4ce;
   background-color: #0a0a23;
   padding: 8px 19px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .experiencia-titulo {
@@ -135,11 +161,13 @@ h1 {
 .badges-contenedor {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 30px 0;
+  
 }
 
 .badge {
-  margin: 5px;
+  margin: 10px;
+  color: #6e9987;
 }
 
 /* Proyectos */
@@ -183,7 +211,7 @@ h1 {
 }
 
 .proyecto:hover img {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .proyecto:hover .overlay {
@@ -216,36 +244,6 @@ h1 {
   justify-content: center;
 }
 
-.testimonio-imagen {
-  height: 150px;
-  width: 150px;
-  margin: 10px 10px 20px 10px;
-}
-
-.testimonio-texto {
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Share Tech Mono', monospace;
-}
-
-.testimonio-info {
-  font-weight: bold;
-  text-align: center;
-}
-
-.testimonio-info p {
-  margin-bottom: 0;
-}
-
-.testimonio-footer .cliente {
-  font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-  font-size: 0.9rem;
-  color: #656060;
-}
 
 /* Contacto */
 
@@ -257,7 +255,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
@@ -339,7 +337,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
   background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  border: 2px solid #6e9987;
 }
 
 .iconos-redes-sociales a:hover i {
