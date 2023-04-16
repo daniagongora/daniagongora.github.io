@@ -1,13 +1,18 @@
-let app = document.getElementById('typewriter');
- 
-let typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 75,
-});
- 
-typewriter
-  .pauseFor(2500)
-  .typeString('Soy programadora y estudiante de ciencias de la computación.')
-  .pauseFor(100)
-  .deleteChars(5)
-  .start();
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.animacion .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.animacion .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.animacion',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
