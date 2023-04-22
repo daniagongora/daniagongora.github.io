@@ -1,4 +1,4 @@
-// Wrap every letter in a span
+// Animación nueva
 var textWrapper = document.querySelector('.animacion .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
