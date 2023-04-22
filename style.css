@@ -167,9 +167,12 @@ h1 {
 
 .badge {
   margin: 10px;
-  color: #6e9987;
+  /*color: #6e9987;*/
 }
-
+.text-bg-primary {
+  color: #fff!important;
+  background-color: RGBA(110,153,135,var(--bs-bg-opacity,1))!important;
+}
 /* Proyectos */
 
 .proyectos-recientes {
