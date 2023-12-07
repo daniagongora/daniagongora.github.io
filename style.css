@@ -382,3 +382,8 @@ footer {
     max-width: 600px;
   }
 }
+.certificacion-imagen{
+  max-width: 800px; 
+  height: auto;
+  margin-left: 200px;
+}
